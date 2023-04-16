@@ -5,7 +5,7 @@ public class Product {
     protected String name;   // Наименование продукта
     protected String brand;   // Производитель продукта
     protected  double price;
-
+    
     public double getPrice(){  // Определяем метод для получения цены продукта
         return price;
     }

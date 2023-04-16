@@ -20,6 +20,22 @@ public class VendingMachine {
         }
         return null;          // возвращение null, если бутылка не найдена
     }
+    /**
+     * @param name
+     * @param calories
+     * @return
+     */
+    public ChocolateBar getChocolateBar(String name, int calories){
+        for (Product product: products) {
+            if (product instanceof ChocolateBar){
+                ChocolateBar pack = ((ChocolateBar)product);
+                if (pack.name.equals(name) && pack.getCalories() == calories)
+                    return pack;
+            }
+        }
+        return null;
+    }
 
 
 }
+
